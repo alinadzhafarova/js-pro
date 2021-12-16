@@ -1,0 +1,46 @@
+.modal-content {
+    background-color: whitesmoke;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+
+input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    align-items: center;
+    text-align: center
+}
+#formContainer{
+    margin-top: 20px;
+}
