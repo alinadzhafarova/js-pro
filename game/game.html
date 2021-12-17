@@ -2,15 +2,59 @@
 <html>
 <head>
     <title> JS task </title>
-    <link rel="stylesheet" href="style.css">
+   <style>
+       .main {
+           margin:0 auto;
+           max-width: 640px;
+       }
+       .main-game {
+           text-align: center;
+           font-size: 50px;
+       }
+
+       .buttons {
+           display: flex;
+           justify-content: space-around;
+       }
+
+       .btn-start {
+           background-color: green;
+           width: 200px;
+           height: 50px
+       }
+       .btn-stop {
+           background-color:red;
+           width: 200px;
+           height: 50px
+       }
+       .main-score {
+           display: block;
+           text-align: center;
+           font-size: 30px;
+           font-weight: 700;
+       }
+
+       canvas {
+           background-color: yellow;
+       }
+
+   </style>
 </head>
 <body>
-<div class="game-wrapper">
-    <button id="startBtn"> Start </button>
-    <button id="stopBtn"> Stop </button>
-    <p> Score: <span id="score"> 0 </span> </p>
+<div class="main">
+   <h2 class="main-game">Game</h2>
+    <div class="menu">
+
+        <div class="buttons">
+            <button class="btn-start">Start</button>
+            <button class="btn-stop">Stop</button>
+        </div>
+        <span class="main-score">Score:
+        <span id="score">0</span>
+        </span>
+    </div>
+    <canvas width="650" height="450" id="canvas"></canvas>
 </div>
-<canvas width="640" height="480" id="canvas"></canvas>
-<script type="text/javascript" src="game.js"></script>
+<script src="game.js"></script>
 </body>
 </html>

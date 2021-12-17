@@ -2,15 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Полезные библиотеки</title>
+    <title>jQuery</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="carousel.css">
+    <style>
+        .carousel-control-next,
+        .carousel-control-prev {
+            background:black;
+            width:2%;
+        }
+
+        .carousel video {
+            display: block;
+            margin: auto;
+            width: 1200px;
+        }
+    </style>
 </head>
+
 <body>
 
 <div class="container">
-    <div class="page-header">
-        <h1 class="text-center">ITunes video gallery</h1>
+    <h1 class="text-center">ITunes video gallery</h1>
     </div>
     <form action="" id="search-form">
         <div class="form-group input-group mb-3">
@@ -36,18 +49,17 @@
         <div class="carousel-inner"></div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
+            <span class="sr-only"></span>
         </a>
         <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
+            <span class="sr-only"></span>
         </a>
     </div>
 
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script src="carousel.js"></script>
 </body>

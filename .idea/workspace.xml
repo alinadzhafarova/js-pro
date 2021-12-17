@@ -6,9 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="7cbdd406-b9ba-4792-b57a-7e4badaaa94f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/books.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/books.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/books.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/books.js" beforeDir="false" afterPath="$PROJECT_DIR$/books/books.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carousel with video/carousel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carousel with video/carousel.html" beforeDir="false" afterPath="$PROJECT_DIR$/carousel with video/carousel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carousel with video/carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/carousel with video/carousel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/game.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/game.html" beforeDir="false" afterPath="$PROJECT_DIR$/game/game.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/game/game.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +95,7 @@
       <workItem from="1637917346485" duration="10954000" />
       <workItem from="1638623914091" duration="32574000" />
       <workItem from="1639040006498" duration="40940000" />
-      <workItem from="1639329060947" duration="16585000" />
+      <workItem from="1639329060947" duration="25467000" />
     </task>
     <task id="LOCAL-00001" summary="remove unused file">
       <created>1639671910737</created>
@@ -101,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639671910737</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add books">
+      <created>1639725160219</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1639725160219</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,6 +121,7 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="remove unused file" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove unused file" />
+    <MESSAGE value="add books" />
+    <option name="LAST_COMMIT_MESSAGE" value="add books" />
   </component>
 </project>
