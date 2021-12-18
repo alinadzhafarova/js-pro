@@ -6,8 +6,22 @@
   <component name="ChangeListManager">
     <list default="true" id="7cbdd406-b9ba-4792-b57a-7e4badaaa94f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/game.html" beforeDir="false" afterPath="$PROJECT_DIR$/game/game.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/game/game.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/books/books.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bootstrap and jQuery(books)/books.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/books/books.js" beforeDir="false" afterPath="$PROJECT_DIR$/Bootstrap and jQuery(books)/books.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/canvas/canvas in functional style.js" beforeDir="false" afterPath="$PROJECT_DIR$/oop in functional style/canvas in functional style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/canvas/canvas.html" beforeDir="false" afterPath="$PROJECT_DIR$/oop in functional style/canvas.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/canvas2/canvas in prototype slyle.js" beforeDir="false" afterPath="$PROJECT_DIR$/oop in prototype style/canvas in prototype slyle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/canvas2/canvas.html" beforeDir="false" afterPath="$PROJECT_DIR$/oop in prototype style/canvas.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carousel with video/carousel.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bootstrap and  jQuery (carousel with video)/carousel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carousel with video/carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/Bootstrap and  jQuery (carousel with video)/carousel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events/events.html" beforeDir="false" afterPath="$PROJECT_DIR$/work with the event object/events.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/work with the event object/events.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/game.html" beforeDir="false" afterPath="$PROJECT_DIR$/native game/game.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/native game/game.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planets /planets.html" beforeDir="false" afterPath="$PROJECT_DIR$/work with request and data/planets.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planets /planets.js" beforeDir="false" afterPath="$PROJECT_DIR$/work with request and data/planets.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/time/watch.html" beforeDir="false" afterPath="$PROJECT_DIR$/native js/watch.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/time/watch.js" beforeDir="false" afterPath="$PROJECT_DIR$/native js/watch.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +105,7 @@
       <workItem from="1637917346485" duration="10954000" />
       <workItem from="1638623914091" duration="32574000" />
       <workItem from="1639040006498" duration="40940000" />
-      <workItem from="1639329060947" duration="36518000" />
+      <workItem from="1639329060947" duration="37536000" />
     </task>
     <task id="LOCAL-00001" summary="remove unused file">
       <created>1639671910737</created>
@@ -128,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639736632238</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add game">
+      <created>1639823774813</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1639823774814</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +162,7 @@
     <MESSAGE value="add books" />
     <MESSAGE value="add edit books" />
     <MESSAGE value="add carousel" />
-    <option name="LAST_COMMIT_MESSAGE" value="add carousel" />
+    <MESSAGE value="add game" />
+    <option name="LAST_COMMIT_MESSAGE" value="add game" />
   </component>
 </project>
