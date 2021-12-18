@@ -1,4 +1,4 @@
-let canvas = document.querySelector('#oop in functional style');
+let canvas = document.querySelector('#canvas');
 let ctx = canvas.getContext('2d');
 let btnStart = document.querySelector('#start-btn');
 let btnStop = document.querySelector('#stop-btn');
