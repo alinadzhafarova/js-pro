@@ -12,6 +12,16 @@ for (let i = 0; i < 11; i++) {
 
 alert(str);
 
+ // или
+
+let str = '';
+
+for (let i = 1; i < 12; i++) {
+    i % 2 ? str += '.' : str += '#';
+}
+
+alert(str);
+
 2.
 // Напишите цикл с шагом 1, в теле которого распечатываются
 // квадраты каждого четного значения счетчика.
@@ -29,23 +39,7 @@ for (let i = 1; i <= 10; i++) {
 //     Happy birthday to you
 //     Happy birthday dear {{username}}
 //     Happy birthday to you
-let username = prompt("Введите Ваше имя");
-let str1 = "Happy birthday to you";
-let str2 = `Happy birthday dear ${username}`;
-for (let i = 0; i < 4; i++) {
-    if (i === 0) {
-        console.log(str1);
-    } else if (i === 1) {
-        console.log(str1);
-    } else if (i === 2) {
-        console.log(str2);
-    } else {
-        console.log(str1);
-    }
 
-}
-
-// или так
 
 let username = prompt("Введите Ваше имя");
 let str1 = "Happy birthday to you";
@@ -115,6 +109,7 @@ for (let i = 1; i <= 10; i++) {
     }
 }
 
+
 8.
 // С помощью цикла for с пустым телом сформируйте строку,
 // представляющую из себя ряд Фибоначчи: 0 1 1 2 3 5 8 13..
@@ -159,7 +154,22 @@ while (num !== null) {
 let average = sum / i;
 console.log("Количество итераций = " + i + "\nСумма = " + sum + "\nСреднее арифметическое = " + average)
 
+// или
 
+for (let count = 0, sum = 0; ; count++) {
+    let number = prompt('Введите число');
+
+    if (number === null) {
+        console.log(`
+            Количество введенных чисел: ${count}
+            Сумма: ${sum}
+            Среднее арифметическое: ${sum / count}
+        `);
+        break;
+    }
+
+    sum += +number;
+}
 10.
 // Напишите проверку пароля, введенного пользователем
 // (заведомо определите пароль). Если введенный пароль правильный,
@@ -176,17 +186,16 @@ const validPassword = "Alina"
 do {
     let password = prompt("Введите пароль ");
 
-    if (password === null || password === validPassword) {
-        if (password === validPassword) {
-            alert("Вы успешно авторизованы")
+    if (password === validPassword) {
+        alert("Вы успешно авторизованы")
             break;
-        } else {
+        } else if(password === null) {
             let confirmation = confirm("Вы уверены, что хотите отменить авторизацию?")
             if (confirmation) {
                 alert("Вы отменили авторизацию")
                 break;
             }
-        }
+
     }
 } while(true);
 
