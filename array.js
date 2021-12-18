@@ -4,7 +4,7 @@
 // Посчитайте сумму всех его чисел, включая строковые.
 // Выведите сумму в alert
 
-let  arr = [1, 2, 3, 'a', 'b', 'c', '4', '5', '6'];
+let arr = [1, 2, 3, 'a', 'b', 'c', '4', '5', '6'];
 let sum = 0;
 for(let key of arr) {
     if (!isNaN(key)) {
@@ -12,7 +12,16 @@ for(let key of arr) {
     }
 }
 console.log(sum)
+// или так
 
+const arr = [1, 2, 3, 'a', 'b', 'c', '4', '5', '6'];
+let sum = arr.reduce((acc, item) => {
+    if(!isNaN(item))
+        return acc + +item;
+    return acc;
+}, 0);
+
+console.log(sum);
 //
 // 2.
 //
@@ -79,6 +88,7 @@ finalStr = finalStr.join(" ")
 
 alert(str)
 alert(finalStr)
+
 //
 // 5.
 // Создайте ассоциативный массив person, описывающий персону,
@@ -160,7 +170,7 @@ for (let i = 0; i < n; i++) {
     }
 }
 
-let sum = arr.reduce((num, item) => num +item, 0);
+let sum = arr.reduce((acc, item) => acc + item, 0);
 
 alert(`Общая сумма равна ${sum}`)
 
