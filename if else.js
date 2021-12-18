@@ -216,6 +216,19 @@ if (lang === 'ru') {
 
 alert(result)
 
+или
+
+const lang = prompt('Выберите язык (ru, en)');
+const day = prompt('Введите номер дня недели (от 0 до 6)');
+const ruDays = ['Воскресенье', 'Понедельнки', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
+const enDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+if (lang === 'ru' && day >= 0 && day < 7)
+    alert(ruDays[day]);
+else if (lang === 'en' && day >= 0 && day < 7)
+    alert(enDays[day]);
+else alert('Вы выбрали неверный язык или день недели');
+
 12.
 //  Получить от пользователя имя и возраст. Записать это в разные переменные.
 // 2. Написать конструкцию switch, которая проверяет 2 случая
