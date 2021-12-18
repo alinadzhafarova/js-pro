@@ -3,6 +3,9 @@
 <head>
     <title> JS task </title>
    <style>
+       canvas {
+           background-color: yellow;
+       }
        .main {
            margin:0 auto;
            max-width: 640px;
@@ -17,12 +20,12 @@
            justify-content: space-around;
        }
 
-       .btn-start {
+       #start-btn {
            background-color: green;
            width: 200px;
            height: 50px
        }
-       .btn-stop {
+       #stop-btn {
            background-color:red;
            width: 200px;
            height: 50px
@@ -34,10 +37,6 @@
            font-weight: 700;
        }
 
-       canvas {
-           background-color: yellow;
-       }
-
    </style>
 </head>
 <body>
@@ -46,14 +45,14 @@
     <div class="menu">
 
         <div class="buttons">
-            <button class="btn-start">Start</button>
-            <button class="btn-stop">Stop</button>
+            <button id="start-btn">Start</button>
+            <button id="stop-btn">Stop</button>
         </div>
         <span class="main-score">Score:
         <span id="score">0</span>
         </span>
     </div>
-    <canvas width="650" height="450" id="canvas"></canvas>
+    <canvas width="640" height="480" id="canvas"></canvas>
 </div>
 <script src="game.js"></script>
 </body>

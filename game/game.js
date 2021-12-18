@@ -1,9 +1,10 @@
-'use strict';
-let btnStart = document.querySelector('.btn-start');
-let btnStop = document.querySelector('.btn-stop');
-
 let canvas = document.querySelector('#canvas');
 let ctx = canvas.getContext('2d');
+let btnStart = document.querySelector('#start-btn');
+let btnStop = document.querySelector('#stop-btn');
+
+let figureArr = [];
+let score = 0;
 
 function Square(x, y, width, height, speed) {
     this.x = x;
@@ -11,18 +12,13 @@ function Square(x, y, width, height, speed) {
     this.width = width;
     this.height = height;
     this.speed = speed;
-
-    this.r = Math.round(Math.random() * 255);
-    this.g = Math.round(Math.random() * 255);
-    this.b = Math.round(Math.random() * 255);
-    this.rgba = "rgba(" + this.r + ", " + this.g + ", " + this.b + ", 1)";
+    this.color = '#' + Math.random().toString(16).substr(-6);
 
     this.draw = function () {
-        ctx.beginPath();
-        ctx.fillStyle = this.rgba;
+        ctx.fillStyle = this.color;
         ctx.fillRect(this.x, this.y, this.width, this.height);
         this.y += this.speed;
-        ctx.closePath();
+
     };
 }
 
@@ -31,17 +27,16 @@ function createGame() {
     let speed = Math.random() * 0.7 + 0.3;
     let gameSquare = new Square(x, -20, 20, 20, speed);
 
-    arraySquares.push(gameSquare);
-    document.querySelector('#score').textContent = 	score;
+    figureArr.push(gameSquare);
+    document.querySelector('#score').textContent = score;
 }
 
-let arraySquares = [];
-let score = 0;
+
 
 function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    arraySquares = arraySquares.filter((element) => {
+    figureArr = figureArr.filter((element) => {
         element.draw();
         return element.y < canvas.width;
     });
@@ -51,7 +46,7 @@ function animate() {
 let infinity;
 
 btnStart.addEventListener('click', () => {
-    if (arraySquares.length === 0) {
+    if (figureArr.length === 0) {
         let randomInterval = Math.random() * 1200 + 200;
         infinity = setInterval(createGame, randomInterval);
         score = 0;
@@ -59,17 +54,17 @@ btnStart.addEventListener('click', () => {
 });
 
 btnStop.addEventListener('click', () => {
-    arraySquares = [];
+    figureArr = [];
     clearInterval(infinity);
 });
 
 canvas.addEventListener('click', (event) => {
-    for (let square of arraySquares) {
+    for (let square of figureArr) {
         if (square.x <= event.offsetX &&
             square.y <= event.offsetY &&
             (square.height + square.x) >= event.offsetX &&
             (square.width + square.y) >= event.offsetY) {
-            arraySquares.splice(arraySquares.indexOf(square), 1);
+            figureArr.splice(figureArr.indexOf(square), 1);
             score += 1;
         }
     }
