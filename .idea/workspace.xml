@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7cbdd406-b9ba-4792-b57a-7e4badaaa94f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7cbdd406-b9ba-4792-b57a-7e4badaaa94f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,7 +87,7 @@
       <workItem from="1637917346485" duration="10954000" />
       <workItem from="1638623914091" duration="32574000" />
       <workItem from="1639040006498" duration="40940000" />
-      <workItem from="1639329060947" duration="84773000" />
+      <workItem from="1639329060947" duration="85092000" />
     </task>
     <task id="LOCAL-00001" summary="remove unused file">
       <created>1639671910737</created>
@@ -168,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639845758986</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add iterating over array">
+      <created>1641557170645</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1641557170645</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +190,7 @@
     <MESSAGE value="add Bootstrap jQuery" />
     <MESSAGE value="add if else" />
     <MESSAGE value="add for" />
-    <option name="LAST_COMMIT_MESSAGE" value="add for" />
+    <MESSAGE value="add iterating over array" />
+    <option name="LAST_COMMIT_MESSAGE" value="add iterating over array" />
   </component>
 </project>
