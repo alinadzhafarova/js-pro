@@ -498,16 +498,11 @@ const result = fields.map((item) => {
 console.log(result);
 // 5. Необходимо сформировать массив объектов только тех у
 // // которых есть поля
-let obj = fields.reduce((acc, item) => {
-    if (item.objectRelation !== null) {
-        objects.find((inner) => inner.id === item.objectRelation.objectId);
-        return [...acc,
-            {...item }
-        ]
-    } else {
-        return acc
-    }
-}, []);
+let obj = objects.filter((object) => {
+    return fields.find(
+        field => field.objectRelation !== null && field.objectRelation.objectId === object.id
+    ) !== undefined
+});
 console.log(obj);
 
 // 6. Необходимо сформировать объект такого формата
@@ -526,26 +521,38 @@ console.log(obj);
 const result = fields.reduce((acc, item) => {
     if (item.objectRelation != null) {
         if (item.objectRelation.objectId in acc) {
-            return {...acc,
-                [item.objectRelation.objectId]: [...acc[item.objectRelation.objectId], item.id, item.permissions]
+            return {
+                ...acc,
+                [item.objectRelation.objectId]: [...acc[item.objectRelation.objectId], {
+                    [item.id]: item.permissions
+                }]
             };
         }
-        return {...acc, [item.objectRelation.objectId]: [item.id, item.permissions] };
+        return {...acc, [item.objectRelation.objectId]: [{[item.id]: item.permissions}] };
     }
     return acc;
 }, {});
 console.log(result);
+
 //7. Необходимо сформировать массив полей в котором будет
 // изменен ключ edit на true, в том случае когда у нас view тоже
 // true
-const result = fields.reduce((acc, item) => {
+const result = fields.map((item) => {
 
-    if (item.permissions.view === true ) {
+    if (item.permissions.view === true) {
 
-        return  [...acc, { ...item,...item.permissions.edit = true }]
+        return {
+            ...item,
+            permissions: {
+                ...item.permissions,
+                edit: true,
+            }
+        }
+    } else {
+        return item
     }
-    return acc;
-},[]);
+
+}, []);
 
 console.log(result)
 
