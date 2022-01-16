@@ -79,38 +79,4 @@ function validateForms(forms) {
     if (!validator.validateSurname()) {
         return "Surname is empty!"
     }
-
-    if (!validator.validateEmail()) {
-        return "Email is invalid! Try another"
-    }
-
-    if (!validator.validatePassword()) {
-        return "Password should be at least 8 characters"
-    }
-
-    return ""
-}
-
-class Validator {
-    constructor(form) {
-        this.form = form
-    }
-
-    validateEmail() {
-        let regexp = /^[^@]{5,}@(gmail.com|mail.ru)$/
-        return regexp.test(this.form.mail.toLowerCase())
-    }
-
-    validatePassword() {
-        return this.form.password && this.form.password.length >= 8
-    }
-
-    validateName() {
-        let regexp = /^[a-zA-Z]+$/
-        return regexp.test(this.form.name)
-    }
-
-    validateSurname() {
-        return this.form.surname && this.form.surname.length > 0
-    }
 }
